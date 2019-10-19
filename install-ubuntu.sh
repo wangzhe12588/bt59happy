@@ -474,8 +474,8 @@ else
 fi
 
 curl -sS --connect-timeout 10 -m 60 https://www.bt.cn/Api/SetupCount?type=Linux\&o=$1 > /dev/null 2>&1
-if [ $1 != "" ];then
-	echo $1 > /www/server/panel/data/o.pl
+if [ "$1" != "" ];then
+	echo "$1" > /www/server/panel/data/o.pl
 	cd /www/server/panel
 	python tools.py o
 fi
