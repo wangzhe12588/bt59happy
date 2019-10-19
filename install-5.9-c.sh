@@ -7,10 +7,10 @@ is64bit=`getconf LONG_BIT`
 if [ -f "/usr/bin/apt-get" ];then
 	isDebian=`cat /etc/issue|grep Debian`
 	if [ "$isDebian" != "" ];then
-		wget -O --no-check-certificate install.sh https://raw.githubusercontent.com/wangzhe12588/bt59happy/master/install-ubuntu.sh && bash install.sh
+		wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/wangzhe12588/bt59happy/master/install-ubuntu.sh && bash install.sh
 		exit;
 	else
-		wget -O --no-check-certificate install.sh https://raw.githubusercontent.com/wangzhe12588/bt59happy/master/install-ubuntu.sh && sudo bash install.sh
+		wget --no-check-certificate -O install.sh https://raw.githubusercontent.com/wangzhe12588/bt59happy/master/install-ubuntu.sh && sudo bash install.sh
 		exit;
 	fi
 fi
@@ -476,7 +476,7 @@ if [ ! -f "/usr/bin/unzip" ];then
 	#rm -f /etc/yum.repos.d/epel.repo
 	yum install unzip -y
 fi
-wget -O --no-check-certificate panel.zip $btpanel_Url -T 10
+wget --no-check-certificate -O panel.zip $btpanel_Url -T 10
 wget -O /etc/init.d/bt $download_Url/install/src/bt.init -T 10
 if [ -f "$setup_path/server/panel/data/default.db" ];then
 	if [ -d "/$setup_path/server/panel/old_data" ];then
