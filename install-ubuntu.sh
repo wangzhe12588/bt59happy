@@ -351,7 +351,7 @@ mkdir -p /www/wwwlogs
 mkdir -p /www/backup/database
 mkdir -p /www/backup/site
 
-wget -O --no-check-certificate panel.zip $btpanel_Url -T 10
+wget --no-check-certificate -O panel.zip $btpanel_Url -T 10
 wget -O /etc/init.d/bt $download_Url/install/src/bt.init -T 10
 if [ -f "$setup_path/server/panel/data/default.db" ];then
 	if [ -d "/$setup_path/server/panel/old_data" ];then
