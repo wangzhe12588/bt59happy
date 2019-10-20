@@ -10,7 +10,7 @@ echo "
 +----------------------------------------------------------------------
 | Copyright © 2015-2018 BT-SOFT(http://www.bt.cn) All rights reserved.
 +----------------------------------------------------------------------
-| The WebPanel URL will be http://SERVER_IP:8899 when installed.
+| The WebPanel URL will be http://SERVER_IP:8888 when installed.
 +----------------------------------------------------------------------
 "
 deepinSys=`cat /etc/issue`
@@ -97,7 +97,7 @@ btpanel_Url=https://raw.githubusercontent.com/wangzhe12588/bt59happy/master/pane
 echo "Download node: $download_Url";
 echo '---------------------------------------------';
 setup_path=/www
-port='8899'
+port='8888'
 if [ -f $setup_path/server/panel/data/port.pl ];then
 	port=`cat $setup_path/server/panel/data/port.pl`
 fi
