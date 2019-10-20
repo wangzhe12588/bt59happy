@@ -488,7 +488,7 @@ echo -e "username: $username"
 echo -e "password: $password"
 echo -e "\033[33mWarning:\033[0m"
 echo -e "\033[33mIf you cannot access the panel, \033[0m"
-echo -e "\033[33mrelease the following port (8899|888|80|443|20|21) in the security group\033[0m"
+echo -e "\033[33mrelease the following port (8888|888|80|443|20|21) in the security group\033[0m"
 echo -e "=================================================================="
 
 endTime=`date +%s`
