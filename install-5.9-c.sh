@@ -61,7 +61,7 @@ echo "
 +----------------------------------------------------------------------
 | Copyright © 2015-2018 BT-SOFT(http://www.bt.cn) All rights reserved.
 +----------------------------------------------------------------------
-| The WebPanel URL will be http://SERVER_IP:8899 when installed.
+| The WebPanel URL will be http://SERVER_IP:8888 when installed.
 +----------------------------------------------------------------------
 "
 get_node_url(){
@@ -113,7 +113,7 @@ btpanel_Url=https://raw.githubusercontent.com/wangzhe12588/bt59happy/master/pane
 echo "Download node: $download_Url";
 echo '---------------------------------------------';
 setup_path=/www
-port='8899'
+port='8888'
 if [ -f $setup_path/server/panel/data/port.pl ];then
 	port=`cat $setup_path/server/panel/data/port.pl`
 fi
@@ -658,7 +658,7 @@ echo -e "username: $username"
 echo -e "password: $password"
 echo -e "\033[33mWarning:\033[0m"
 echo -e "\033[33mIf you cannot access the panel, \033[0m"
-echo -e "\033[33mrelease the following port (8899|888|80|443|20|21) in the security group\033[0m"
+echo -e "\033[33mrelease the following port (8888|888|80|443|20|21) in the security group\033[0m"
 echo -e "=================================================================="
 
 endTime=`date +%s`
